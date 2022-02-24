@@ -9,7 +9,7 @@ import {
   Container,
   Row,
 } from "reactstrap";
-import HomeImage from "./ultimate-material-lollipop-collection1.png";
+import { Link } from "react-router-dom";
 function HomeScreen() {
   const [stockApi, setStockApi] = useState([]);
   useEffect(() => {
@@ -26,21 +26,21 @@ function HomeScreen() {
     <>
       <div>
         <Container className="text-center mt-3">
-          <Card>
-            <CardHeader>
+          <Card style={{ backgroundColor: "black" }}>
+            <CardHeader style={{ color: "white" }}>
               <h3>Offer Market</h3>
             </CardHeader>
             <CardBody>
               <Row>
                 {stockApi.map((stock, index) => (
                   <>
-                    <Col md={3} className="mt-2 p-2 mb-5">
+                    <Col md={3} className="mt-4 p-2 mb-5">
                       <Card className="home-image">
-                        <CardImg src={stock.img} style={{ minWidth: "100%",minHeight: "100%"}} />
-                        <h1>{stock.name}</h1>
-                        <h3>Price: {stock.price}</h3>
-                        <h3>Quantity: {stock.quantity}</h3>
-                        <h3>Category: {stock.category}</h3>
+                        <CardBody>
+                          {" "}
+                          <CardImg style={{minWidth:100,minHeight:500}} className="mb-3" src={stock.img}/>
+                          <Link style={{textDecoration:"none",fontSize:"30px",color:"#000"}} to="/">{stock.title}</Link>
+                        </CardBody>
                       </Card>
                     </Col>
                   </>

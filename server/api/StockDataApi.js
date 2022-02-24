@@ -1,74 +1,114 @@
-const StockDataApi = [{
-    "id": "1",
-    "name": "Ladies Purse",
-    "price": "100",
-    "img": "/Images/ladies_purse.jpg",
-    "quantity": "100",
-    "category": "purse",
-}, {
-    "id": "2",
-    "name": "Iphone 12",
-    "price": "100000",
-    "img": "/Images/iphone_mobile.jpeg",
-    "quantity": "10",
-    "category": "mobile",
-},{
-    "id": "3",
-    "name": "Mac Book Pro",
-    "price": "100000",
-    "img": "/Images/macbook.png",
-    "quantity": "10",
-    "category": "laptop",
-},{
-    "id": "4",
-    "name": "Jewelers Purse",
-    "price": "100",
-    "img": "/Images/purse.jpg",
-    "quantity": "100",
-    "category": "purse",
-},{
-    "id": "5",
-    "name": "Samsung Mobile",
-    "price": "100000",
-    "img": "/Images/samsung_mobile.jpg",
-    "quantity": "10",
-    "category": "mobile",
-},{
-    "id": "6",
-    "name": "Shirt",
-    "price": "200",
-    "img": "/Images/shirt.jpg",
-    "quantity": "0",
-    "category": "shirt",
-},{
-    "id": "7",
-    "name": "Shoes",
-    "price": "200",
-    "img": "/Images/shoes.jpeg",
-    "quantity": "50",
-    "category": "shoes",
-},{
-    "id": "8",
-    "name": "T-Shirt",
-    "price": "200",
-    "img": "/Images/t-shirt.jpeg",
-    "quantity": "50",
-    "category": "t-shirt", 
-},{
-    "id": "9",
-    "name": "Wallet",
-    "price": "200",
-    "img": "/Images/wallet-for-men.jpg",
-    "quantity": "2",
-    "category": "wallet",
-},{
-    "id": "10",
-    "name": "Digital Watch",
-    "price": "200",
-    "img": "/Images/watch.jpg",
-    "quantity": "4",
-    "category": "Watches", 
-}
-]
+const StockDataApi = [
+  {
+    id: "1",
+    title: "Purse",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    name: "ladies-purse",
+    price: "100",
+    img: "/Images/ladies_purse.jpg",
+    quantity: "100",
+    category: "purse",
+  },
+  {
+    id: "2",
+    title: "Mobile Phone",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    name: "mac-book",
+    price: "100000",
+    img: "/Images/iphone_mobile.jpeg",
+    quantity: "10",
+    category: "mobile",
+  },
+  {
+    id: "3",
+    title: "Laptop",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    name: "mac-book-laptop",
+    price: "100000",
+    img: "/Images/macbook.png",
+    quantity: "10",
+    category: "laptop",
+  },
+  {
+    id: "4",
+    title: "Purse",
+    price: "100",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    name: "jewelers-purse",
+    img: "/Images/purse.jpg",
+    quantity: "100",
+    category: "purse",
+  },
+  {
+    id: "5",
+    title: "Mobile",
+    price: "100000",
+    img: "/Images/samsung_mobile.jpg",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    name: "samsung-mobile",
+    quantity: "10",
+    category: "mobile",
+  },
+  {
+    id: "6",
+    title: "Clothes",
+    price: "200",
+    img: "/Images/shirt.jpg",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    name: "shirt",
+    quantity: "0",
+    category: "clothes",
+  },
+  {
+    id: "7",
+    title: "Shoes",
+    price: "200",
+    img: "/Images/shoes.jpeg",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    name: "shoes",
+    quantity: "50",
+    category: "shoes",
+  },
+  {
+    id: "8",
+    title: "Clothes",
+    price: "200",
+    img: "/Images/t-shirt.jpeg",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    name: "t-shirt",
+    quantity: "50",
+    category: "t-shirt",
+  },
+  {
+    id: "9",
+    title: "Clothes",
+    price: "200",
+    img: "/Images/wallet-for-men.jpg",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    name: "wallet",
+    quantity: "2",
+    category: "wallet",
+  },
+  {
+    id: "10",
+    title: "Digital Watch",
+    price: "200",
+    img: "/Images/watch.jpg",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    name: "watch",
+    quantity: "4",
+    category: "Watches",
+  },
+];
 
 export default StockDataApi;
