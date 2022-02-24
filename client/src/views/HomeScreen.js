@@ -13,7 +13,13 @@ function HomeScreen() {
   },[])
   return (
     <div>hi
-    <h1>{stockApi.name}</h1>
+     {stockApi.map((stock) => {
+      return (
+        <div>
+          <h3>{stock.name}</h3>
+        </div>
+      )
+     })}
     </div>
   )
 }
