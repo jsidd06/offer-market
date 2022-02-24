@@ -2,20 +2,20 @@ import dotenv from 'dotenv';
 dotenv.config();
 import express from "express";
 import cors from "cors";
-import StockApi from './api/StockApi.js';
-
+import StockDataApi from './api/StockDataApi.js';
 const app = express();
 
 app.use(cors());
-
-app.get('/', (req, res) => {
-    res.status(200).json({
-        message: 'Welcome to the API'
-    });
+// home stock data api
+app.get('/home', (req, res) => {
+    res.status(200).json(StockDataApi);
 })
 
-app.get('/home', (req, res) => {
-    res.status(200).json(StockApi);
+// search api data
+app.get('/search', (req, res) => {
+    let search = req.query.search;
+    let result = StockDataApi.filter(stock => stock.category.toLowerCase() || stock.name.toLowerCase().includes(search.toLowerCase()));
+    res.status(200).json(result);
 })
 
 app.listen(5000, () => {
