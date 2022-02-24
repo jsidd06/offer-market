@@ -15,7 +15,6 @@ function HomeScreen() {
   useEffect(() => {
     Axios.get("/home")
       .then((response) => {
-        console.log(response.data);
         setStockApi(response.data);
       })
       .catch((error) => {
@@ -34,12 +33,25 @@ function HomeScreen() {
               <Row>
                 {stockApi.map((stock, index) => (
                   <>
-                    <Col md={3} className="mt-4 p-2 mb-5">
+                    <Col key={index} md={3} className="mt-4 p-2 mb-5">
                       <Card className="home-image">
                         <CardBody>
                           {" "}
-                          <CardImg style={{minWidth:100,minHeight:500}} className="mb-3" src={stock.img}/>
-                          <Link style={{textDecoration:"none",fontSize:"30px",color:"#000"}} to="/">{stock.title}</Link>
+                          <CardImg
+                            style={{ minWidth: 100, minHeight: 500 }}
+                            className="mb-3"
+                            src={stock.img}
+                          />
+                          <Link
+                            style={{
+                              textDecoration: "none",
+                              fontSize: "30px",
+                              color: "#000",
+                            }}
+                            to={`/productScreen/${stock.id}`}
+                          >
+                            {stock.title}
+                          </Link>
                         </CardBody>
                       </Card>
                     </Col>
