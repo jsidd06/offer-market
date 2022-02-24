@@ -51,14 +51,14 @@ const StockDataApi = [{
     "id": "8",
     "name": "T-Shirt",
     "price": "200",
-    "img": "/Images/t-shirt.jpg",
+    "img": "/Images/t-shirt.jpeg",
     "quantity": "50",
     "category": "t-shirt", 
 },{
     "id": "9",
     "name": "Wallet",
     "price": "200",
-    "img": "/Images/wallet_for_men.jpg",
+    "img": "/Images/wallet-for-men.jpg",
     "quantity": "2",
     "category": "wallet",
 },{
