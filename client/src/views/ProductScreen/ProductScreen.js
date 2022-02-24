@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, CardBody, CardHeader, CardImg, Container } from "reactstrap";
+import { Card, CardBody, CardHeader, CardImg, Col, Container, Row } from "reactstrap";
 import { useParams } from "react-router-dom";
 import Axios from "../../components/config/Axios";
 function ProductScreen() {
@@ -17,12 +17,40 @@ function ProductScreen() {
     <>
       <Container className="text-center mt-3">
         <Card style={{ backgroundColor: "black" }}>
-          <CardHeader style={{ color: "white" }}>
-            {product.title}
-          </CardHeader>
-          <CardBody>
-              <CardImg src={product.img} />
-          </CardBody>
+          <Row>
+            <Col md={6} className="mt-5">
+              <CardHeader style={{ color: "white" }}>
+                <h3>{product.title}</h3>
+              </CardHeader>
+              <CardBody>
+                <CardImg src={product.img} />
+              </CardBody>
+            </Col>
+            <Col md={6} className="mt-5">
+              <CardBody className="mt-5 p-3">
+                <CardBody style={{ color: "white" }}>
+                  <h3>Description</h3>
+                  <br></br>
+                  <h6>{product.description}</h6>
+                  <span>
+                    <del style={{ color: "red", fontSize: "20px" }}>
+                      Price:- {product.price}
+                    </del>
+                  </span>
+                  <h6 style={{ color: "green" }}>
+                    Discount Price:- {product.discountPrice}
+                  </h6>
+                  <br></br>
+                  <p>
+                    <i style={{ color: "green"}}class="fa-solid fa-plus">1</i>
+                  </p>
+                    <p>
+                        <i style={{color:"red"}} class="fa-solid fa-minus">2</i>
+                    </p>
+                </CardBody>
+              </CardBody>
+            </Col>
+          </Row>
         </Card>
       </Container>
     </>

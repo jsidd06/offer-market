@@ -32,30 +32,28 @@ function HomeScreen() {
             <CardBody>
               <Row>
                 {stockApi.map((stock, index) => (
-                  <>
-                    <Col key={index} md={3} className="mt-4 p-2 mb-5">
-                      <Card className="home-image">
-                        <CardBody>
-                          {" "}
-                          <CardImg
-                            style={{ minWidth: 100, minHeight: 500 }}
-                            className="mb-3"
-                            src={stock.img}
-                          />
-                          <Link
-                            style={{
-                              textDecoration: "none",
-                              fontSize: "30px",
-                              color: "#000",
-                            }}
-                            to={`/productScreen/${stock.id}`}
-                          >
-                            {stock.title}
-                          </Link>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </>
+                  <Col key={index} md={3} className="mt-4 p-2 mb-5">
+                    <Card className="home-image">
+                      <CardBody>
+                        {" "}
+                        <CardImg
+                          style={{ minWidth: 100, minHeight: 500 }}
+                          className="mb-3"
+                          src={stock.img}
+                        />
+                        <Link
+                          style={{
+                            textDecoration: "none",
+                            fontSize: "30px",
+                            color: "#000",
+                          }}
+                          to={`/productScreen/${stock.id}`}
+                        >
+                          {stock.title} 
+                        </Link>
+                      </CardBody>
+                    </Card>
+                  </Col>
                 ))}
               </Row>
             </CardBody>

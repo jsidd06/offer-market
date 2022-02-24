@@ -6,6 +6,7 @@ const StockDataApi = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
     name: "ladies-purse",
     price: "100",
+    discountPrice: "70",
     img: "/Images/ladies_purse.jpg",
     quantity: "100",
     category: "purse",
@@ -16,6 +17,7 @@ const StockDataApi = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
     name: "mac-book",
+    discountPrice: "90000",
     price: "100000",
     img: "/Images/iphone_mobile.jpeg",
     quantity: "10",
@@ -28,6 +30,7 @@ const StockDataApi = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
     name: "mac-book-laptop",
     price: "100000",
+    discountPrice: "70000",
     img: "/Images/macbook.png",
     quantity: "10",
     category: "laptop",
@@ -39,6 +42,7 @@ const StockDataApi = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
     name: "jewelers-purse",
+    discountPrice: "70",
     img: "/Images/purse.jpg",
     quantity: "100",
     category: "purse",
@@ -47,6 +51,7 @@ const StockDataApi = [
     id: "5",
     title: "Mobile",
     price: "100000",
+    discountPrice: "80000",
     img: "/Images/samsung_mobile.jpg",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
@@ -58,6 +63,7 @@ const StockDataApi = [
     id: "6",
     title: "Clothes",
     price: "200",
+    discountPrice: "150",
     img: "/Images/shirt.jpg",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
@@ -73,6 +79,7 @@ const StockDataApi = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
     name: "shoes",
+    discountPrice: "120",
     quantity: "50",
     category: "shoes",
   },
@@ -84,6 +91,7 @@ const StockDataApi = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
     name: "t-shirt",
+    discountPrice: "150",
     quantity: "50",
     category: "t-shirt",
   },
@@ -95,6 +103,7 @@ const StockDataApi = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
     name: "wallet",
+    discountPrice: "150",
     quantity: "2",
     category: "wallet",
   },
@@ -107,6 +116,7 @@ const StockDataApi = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
     name: "watch",
     quantity: "4",
+    discountPrice: "170",
     category: "Watches",
   },
 ];
