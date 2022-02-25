@@ -10,6 +10,7 @@ import {
   Row,
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import NavBarScreen from "./NavBarScreen/NavBarScreen";
 function HomeScreen() {
   const [stockApi, setStockApi] = useState([]);
   useEffect(() => {
@@ -27,7 +28,8 @@ function HomeScreen() {
         <Container className="text-center mt-3">
           <Card style={{ backgroundColor: "black" }}>
             <CardHeader style={{ color: "white" }}>
-              <h3>Offer Market</h3>
+              <h3 className="mb-4">Offer Market</h3>
+              <NavBarScreen />
             </CardHeader>
             <CardBody>
               <Row>
@@ -49,7 +51,7 @@ function HomeScreen() {
                           }}
                           to={`/productScreen/${stock.id}`}
                         >
-                          {stock.title} 
+                          {stock.title}
                         </Link>
                       </CardBody>
                     </Card>

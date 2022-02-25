@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, CardBody, CardHeader, CardImg, Col, Container, Row } from "reactstrap";
+import { Button, Card, CardBody, CardHeader, CardImg, Col, Container, Row } from "reactstrap";
 import { useParams } from "react-router-dom";
 import Axios from "../../components/config/Axios";
 function ProductScreen() {
@@ -48,6 +48,14 @@ function ProductScreen() {
                         <i style={{color:"red"}} class="fa-solid fa-minus">2</i>
                     </p>
                 </CardBody>
+                <Row>
+                  <Col md={6}>
+                    <Button style={{paddingLeft:40,paddingRight:40}} className="btn btn-warning">BuyNow</Button>
+                    </Col>
+                  <Col md={6}>
+                    <Button style={{paddingLeft:40,paddingRight:40}} className="btn btn-info" >Add To Cart</Button>
+                    </Col>
+                </Row>
               </CardBody>
             </Col>
           </Row>
