@@ -9,7 +9,7 @@ function NavBarScreen() {
           <h1>NavBarScreen</h1>
         </Col>
         <Col md={4}>
-          <Input />
+          <Input placeholder="search" />
         </Col>
         <Col md={4} style={{textAlign: 'right'}}>
           <i className="fa-solid fa-user"></i>
