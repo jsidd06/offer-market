@@ -1,19 +1,29 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
-import { Button, Card, CardBody, CardHeader, Form, FormGroup, Input, Label } from 'reactstrap'
-
+import { Button, Card, CardBody, CardHeader, Container, Form, FormGroup, Input, Label } from 'reactstrap'
 function Register() {
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log("Form Submitted");
+    window.location = "/login";
+  };
   return (
-    <Component>
-      <Card>
+    <Container
+      className="mt-5"
+      style={{ backgroundColor: "black", color: "#000" }}
+    >
+      <Card
+        className="mt-5"
+        style={{ backgroundColor: "black", color: "white" }}
+      >
         <CardHeader>
           <h3>Register</h3>
         </CardHeader>
         <CardBody>
-          <Form>
+          <Form onSubmit={submitHandler}>
             <FormGroup>
-              <Label>First Name</Label>
-              <Input placeholder="First Name" />
+              <Label>Full Name</Label>
+              <Input placeholder="Full Name" />
             </FormGroup>
             <FormGroup>
               <Label>Create your Username</Label>
@@ -23,14 +33,22 @@ function Register() {
               <Label>Create your Password</Label>
               <Input placeholder="create your password" />
             </FormGroup>
-            <div>
-              <Button type="submit">Register</Button>
-              <Link to="/login">Login</Link>
+            <div className="mt-3">
+              <Button
+                style={{ marginLeft: 40, marginRight: 40 }}
+                className="btn btn-info"
+                type="submit"
+              >
+                Register
+              </Button>
+              <Link className="btn btn-danger" to="/login">
+                Login
+              </Link>
             </div>
           </Form>
         </CardBody>
       </Card>
-    </Component>
+    </Container>
   );
 }
 

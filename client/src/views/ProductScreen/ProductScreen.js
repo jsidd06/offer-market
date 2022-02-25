@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card, CardBody, CardHeader, CardImg, Col, Container, Row } from "reactstrap";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Axios from "../../components/config/Axios";
 function ProductScreen() {
   const { id } = useParams();
@@ -42,15 +42,15 @@ function ProductScreen() {
                   </h6>
                   <br></br>
                   <p>
-                    <i style={{ color: "green"}}class="fa-solid fa-plus">1</i>
+                    <i style={{ color: "green"}}className="fa-solid fa-plus">1</i>
                   </p>
                     <p>
-                        <i style={{color:"red"}} class="fa-solid fa-minus">2</i>
+                        <i style={{color:"red"}} className="fa-solid fa-minus">2</i>
                     </p>
                 </CardBody>
                 <Row>
                   <Col md={6}>
-                    <Button style={{paddingLeft:40,paddingRight:40}} className="btn btn-warning">BuyNow</Button>
+                    <Link to="/login" style={{paddingLeft:40,paddingRight:40}} className="btn btn-warning">BuyNow</Link>
                     </Col>
                   <Col md={6}>
                     <Button style={{paddingLeft:40,paddingRight:40}} className="btn btn-info" >Add To Cart</Button>
