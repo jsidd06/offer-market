@@ -12,7 +12,7 @@ function ProductScreen() {
       }).catch((error) => {
           console.log(error);
       });
-  },[])
+  },[id])
   return (
     <>
       <Container className="text-center mt-3">
